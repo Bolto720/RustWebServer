@@ -55,6 +55,8 @@ impl Worker {
             println!("Worker {} got a job; executing.", id);
 
             job();
+
+            println!("Worker {}; job done", id);
         });
 
         Worker { id, thread }
